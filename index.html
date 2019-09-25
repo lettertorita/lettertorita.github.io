@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html lang="ru" class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html lang="ru" class="lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html lang="ru" class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="ru">
+<head>
+	<title>Маргарите</title>
+	<meta charset="utf-8" />
+	<!-- <meta name="viewport" content="width=device-width, user-scalable=no"> -->
+	<meta name="description" content="" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+	<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter51039878 = new Ya.Metrika2({
+                    id:51039878,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/tag.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks2");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/51039878" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/media.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<script src="js/d3.min.js"></script>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/common.js"></script>
+	
+	<!--подкючаем fancybox-->
+<link rel="stylesheet" type="text/css" media="all" href="fancybox/jquery.fancybox.css">
+<script type="text/javascript" src="fancybox/jquery.fancybox.js"></script>
+
+</head>
+<body>
+	<div class="title">
+		<center>
+			Здравствуй, Рита! <br>
+			
+
+		</center>
+	</div>
+	<div class="text">
+		Этот сайт необычный - он содержит тайное послание, которое видно будет только тебе.
+		Наверное, ты уже поняла кто я, но пусть пока это будет интригой, хоть и небольшой.
+
+		Тебе придется ответить на один вопрос, чтобы я понял что это именно ты и сделал послание видимым. 
+		<br><i style="color: red;">Ответ состоит из букв</i>
+			<br>
+		Внизу есть кнопка! Действуй)
+
+	</div>
+	<center>
+	<a href="#answer" rel="nofollow" class="modalbox mail-btn">
+		 ЖМИ
+		</a>
+	</center>
+	<!-- всплывающее окно -->
+	<div id="answer">
+		<h3>Осталось немного</h3>
+		<form class="answerForm" id="f_answer" name="answer" action="#" method="post">
+		<label for="f_answer" class="textform">Введи мой ник в одной из популярных социальных сетей, где я встретил тебя</label>
+		<input type="text" id="f_answer_input" class="inputStyle" name="f_text_answer">
+		<div class="error-box"></div>
+		<center>
+			<input type="submit" class="flat2" id="f_answer_input" name="f_answer_input" onclick="validationLetter()" value="Показать письмо!"/>
+		</center>
+		</form>
+	</div>
+	<div id="post">
+		<!-- здесь будет письмо -->
+	</div>
+	
+
+</body>
+</html>
