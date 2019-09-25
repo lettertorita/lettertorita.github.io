@@ -20,12 +20,12 @@ $(document).ready(function(){
        {
              case 'f_answer_input':
                 var regExpLength = /^[a-z/A-Z.]+$/; 
-                if(val == 'whitebirdspace' && val != '' && regExpLength.test(val))
+                if(val == 'marg_a_rita_' && val != '' && regExpLength.test(val))
                 {
                     answerValue=val;
                     
                    $(this).removeClass('error').addClass('not_error');
-                   $(this).next('.error-box').text('Ты права, Рита. Теперь ты знаешь кто я. Нажимай "Показать письмо"')
+                   $(this).next('.error-box').text('Теперь я убедился, что это именно ты! Скорее нажимай "Показать письмо"')
                                              .css('color','green')
                                              .animate({'paddingLeft':'10px'},400)
                                              .animate({'paddingLeft':'5px'},400);
